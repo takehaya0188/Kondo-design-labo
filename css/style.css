@@ -217,7 +217,7 @@ Main
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #f8fbff;
     font-size: 110px;
-    right: 50px;
+    right: 30px;
     bottom: 10px;
     opacity: 0;
     animation: copyFade 1.2s ease forwards;
