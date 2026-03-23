@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>近藤デザイン研究室</title>
+ <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+<script src="js/lightbox-plus-jquery.js"></script>
+</head>
+
+<!--参考サイト　https://webdesign-pg.com/lightbox2-->
+
+<body>
+ <header>
+  <h1>
+  <a href="index.html">
+    <img src="images/logo.png" alt="ロゴ">
+  </a>
+  </h1>
+  <nav>
+  <ul>
+    <li><a href="https://futredb.fukui-ut.ac.jp/html/100000103_ja.html" target="_blank">教員紹介</a></li>
+    <li><a href="works.html">作品紹介</a></li>
+ </ul>
+ </nav>
+ </header>
+
+<main>
+ <!--ファーストビュー-->
+ <div class="worksmainImg">
+    <img src="images/worksfirstview.png" alt="バス">
+    <p>作品紹介</p>
+ </div>
+
+ <!--作品一覧-->
+  <section id="worklist">
+    <div class="wrap">
+    <h2 class="title">作品一覧</h2>
+    <p class="overview">近藤研究室の制作実績をご紹介いたします。近藤研究室では広告やロゴデザインなどのグラフィックデザインをベースとした作品制作を行っています。</p>
+     <section class="fadein">
+    <div class="block">
+     <div class="column">
+      <a href="images/2022雨水ドリンク.jpg" data-lightbox="works" data-title="あまみずドリンクラベルデザイン">
+        <div class="img"><img src="images/rainwater.png" alt="あまみずドリンクラベルデザイン"></div>
+        <p class="workname">あまみずドリンクラベルデザイン</p>
+        <p class="genre">グラフィックデザイン</p>
+      </a>
+      </div>
+     <div class="column">
+      <a href="images/smilebusfull.png" data-lightbox="works" data-title="すまいるバスラッピングデザイン">
+        <div class="img"><img src="images/smilebus.png" alt="すまいるバスラッピングデザイン"></div>
+        <p class="workname">すまいるバスラッピングデザイン</p>
+        <p class="genre">グラフィックデザイン</p>
+      </a>
+      </div>
+      <div class="column">
+        <a href="images/cyclefull.png" data-lightbox="works" data-title="ワカサイクル案内看板デザイン">
+          <div class="img"><img src="images/cycle.png" alt="ワカサイクル案内看板デザイン"></div>
+          <p class="workname">ワカサイクル案内看板デザイン</p>
+          <p class="genre">グラフィックデザイン</p>
+        </a>
+      </div>
+      <div class="column">
+        <a href="images/pictogramfull.png" data-lightbox="works" data-title="福井県原子力防災ピクトグラムデザイン">
+          <div class="img"><img src="images/pictogram.png" alt="福井県原子力防災ピクトグラムデザイン"></div>
+          <p class="workname">福井県原子力防災ピクトグラムデザイン</p>
+          <p class="genre">グラフィックデザイン</p>
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://www.youtube.com/watch?v=3oI9Q3nmSRc" target="_blank">
+          <div class="img"><img src="images/rainstorage.png" alt="蓄雨解説アニメーション"></div>
+          <p class="workname">蓄雨解説アニメーション</p>
+          <p class="genre">映像制作</p>
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://www.youtube.com/watch?v=eiMey_1U25o" target="_blank">
+          <div class="img"><img src="images/videothumbnail.png" alt="秩父ケミカルPR映像"></div>
+          <p class="workname">秩父ケミカルPR映像</p>
+          <p class="genre">映像制作</p>
+        </a>
+      </div>
+     </div>
+    </div>
+  </section>
+</section>
+
+<!--FOOTER-->
+ <footer>
+  <div class="logo"><img src="images/logo.png" alt="ロゴ"></div>
+    <p class="copy">&copy;2025 近藤研究室</p>
+  </footer>
+
+<script>
+const targets = document.querySelectorAll('.fadein');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+targets.forEach(target => {
+  observer.observe(target);
+});
+</script>
+
+
+</body>
+</html>
