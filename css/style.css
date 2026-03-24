@@ -640,7 +640,7 @@ FOOTER
 ================================*/
 footer{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
     padding-top: 58px;
     background-color: #A4D5E3;
 }
@@ -659,6 +659,7 @@ footer .copy{
 
 @media screen and (max-width:600px){
     footer{
+        margin-top: 40px;
         padding-top: 30px;
     }
     footer img{
