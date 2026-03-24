@@ -362,8 +362,6 @@ Profile
 
 #Profile .img img{
     width: 357px;
-    padding-right: 50px;
-    padding-left: 50px;
 }
 
 #Profile p.name{
@@ -416,6 +414,8 @@ Profile
     }
     #Profile .img img{
         width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     #Profile p.name{
         text-align: center;
@@ -580,7 +580,7 @@ Access
         padding-bottom: 70px;
     }
     #Access .gmap p{
-        width: 250px;
+        width: 200px;
     }
     .gmap {
         height: 400px;
