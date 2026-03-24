@@ -362,6 +362,8 @@ Profile
 
 #Profile .img img{
     width: 357px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 #Profile p.name{
