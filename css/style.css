@@ -322,6 +322,41 @@ News
     margin: 0;
 }
 
+.news-text a:hover{
+    text-decoration: underline;
+    text-decoration-color: #A4D5E3;
+    color: #A4D5E3;
+}
+
+@media screen and (max-width:600px){
+
+    .news {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px;
+        padding: 20px;
+    }
+
+    .news-label{
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .news-date{
+        padding-left: 5px;
+        font-size: 13px;
+        color: #777;
+    }
+
+    .news-text{
+        padding-left: 5px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+}
+
 /*================================
 Introduction
 ================================*/
@@ -806,6 +841,9 @@ Worklist
         width: 100%;
     }
     #worklist .block .column{
+        width: 100%;
+    }
+    #worklist .workname{
         width: 100%;
     }
 }
