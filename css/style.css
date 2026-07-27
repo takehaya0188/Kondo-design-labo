@@ -295,6 +295,34 @@ Main
 }
 
 /*================================
+News
+================================*/
+.news{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-label{
+    background: #f5a000;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.news-date{
+    color: #666;
+}
+
+.news-text{
+    margin: 0;
+}
+
+/*================================
 Introduction
 ================================*/
 #Introduction {
